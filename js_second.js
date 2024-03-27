@@ -1,4 +1,4 @@
-var start=confirm("Kod Baslasin?");
+var start=confirm("Ilk olaraq Cancel secin, Inspect acin ve restart verin. Kod Baslasin?");
 if(start){
 alert("Task1 : İlk olaraq daxil etdiyiniz ədədin mürəkkəb, yoxsa sadə olmağını yoxlayacayıq.")
 let num=+prompt("Ədədi daxil edin:");
@@ -162,7 +162,9 @@ else(
 
 
 
-};
+}
 
-else{};
+else{
+
+}
 
