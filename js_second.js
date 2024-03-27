@@ -97,7 +97,7 @@ alert("Task 4: Daxil etdiyiniz 2 eded arasinda sade ededler gosterilecek:")
 
 let num5=prompt("Araliq secmek ucun ilk reqemi secin.");
 let num6=prompt("Araliq secmek ucun ilk reqemi secin.");
-
+if(num5<num6){
 for(i=num5;i<num6;i++){
     for(j=1;j<=i;j++){
 
@@ -108,6 +108,22 @@ for(i=num5;i<num6;i++){
         console.log(`Task 4 :${i} sade ededdir`)
     }
     }
+}}
+else if(num5>num6){
+    for(i=num6;i<num5;i++){
+        for(j=1;j<=i;j++){
+    
+        if(i%j===0 && j!==i && j!==1){
+            break;
+        }
+        else if(j===i){
+            console.log(`Task 4 :${i} sade ededdir`)
+        }
+        }
+    }}
+
+else{
+    console.log("Daxil edilen ededler eyni ola bilmez.");
 }
 
 
